@@ -3,7 +3,7 @@
 // github.com/wisehackermonkey
 // oranbusiness@gmail.com
 // 20200709  
-             
+// hi ben!
 
 
 let hit = false;
@@ -20,13 +20,13 @@ function draw(){
 	 
 	// Use vectors as input.
 	let mouse		 = createVector(mouseX,mouseY);
-  let ellipse_start = createVector(200,200);
-  let ellipse_size  = createVector(50,150);
+  	let ellipse_start = createVector(200,200);
+  	let ellipse_size  = createVector(50,150);
 	hit = collidePointEllipseVector(mouse, ellipse_start, ellipse_size)
 
 	stroke( (hit) ? color("red") : 0);
 	print("colliding? " + hit);
-  square(mouseX, mouseY, 100);
-  text("hi Ben!",mouseX+30,mouseY+30);
-  text("Hi Oran!\nNice vectors.",mouseX+10,mouseY+60);
+	square(mouseX, mouseY, 100);
+	text("hi Ben!",mouseX+30,mouseY+30);
+	text("Hi Oran!\nNice vectors.",mouseX+10,mouseY+60);
 }
